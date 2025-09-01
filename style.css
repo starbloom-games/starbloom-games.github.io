@@ -1,0 +1,182 @@
+@font-face {
+    font-family: Roboto;
+    src: url(/res/fonts/Roboto-Regular.ttf);
+}
+
+* {
+    color: #fff;
+    background-color: #112;
+    font-family: Roboto;
+}
+
+body {
+    width: 70%;
+    padding-left: 15%;
+}
+
+.centered {
+    height: 80vh;
+}
+
+.centered {
+    padding-left: 13%;
+    padding-top: 70px;
+    align-content: center;
+    text-align: center;
+}
+
+main:not(.centered) {
+    padding-top: 100px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+header h2 {
+    float: left;
+}
+
+.header-right {
+    margin-top: 25px;
+    float: right;
+}
+
+header .selected {
+    border-bottom: solid 2px white;
+    color: white;
+}
+
+img.logo {
+    width: 170px;
+    margin: 0;
+    background-image: url(/res/icons/aura.png);
+    background-size: 170px;
+    background-position: center;
+    -webkit-animation: glow 3s ease-in-out infinite alternate;
+    -moz-animation: glow 3s ease-in-out infinite alternate;
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+.logo-temp {
+    font-size: 170px;
+    margin: 0;
+    -webkit-animation: glow-temp 3s ease-in-out infinite alternate;
+    -moz-animation: glow-temp 3s ease-in-out infinite alternate;
+    animation: glow-temp 3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow-temp {
+    from {
+        text-shadow: 0 0 60px #ffc;
+    }
+    to {
+        text-shadow: 0 0 20px #ffc;
+    }
+}
+
+@-webkit-keyframes glow {
+    from {
+        background-size: 170px;
+    }
+    to {
+        background-size: 210px;
+    }
+}
+
+.links {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.store-links img, .social-links img {
+    width: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.store-links a:not(:last-child), .social-links a:not(:last-child) {
+    margin-right: 10px;
+}
+
+.store-links a:hover, .social-links a:hover {
+    border-bottom: solid 0px white;
+}
+
+.store-links img:hover, .social-links img:hover {
+    transform: scale(1.25);
+}
+
+a {
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    color: lightgray;
+}
+
+a:hover {
+    border-bottom: solid 4px white;
+}
+
+.game-screenshot {
+    height: 150px;
+    transition: all .1s ease-in-out;
+    z-index: 0;
+}
+
+.game-screenshot:hover {
+    transform: scale(1.5);
+    z-index: 9999;
+}
+
+.game-platforms {
+    color: #888;
+}
+
+.team-member {
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member .avatar {
+    border-radius: 999999px;
+    width: 150px;
+}
+
+.team-member .pronouns {
+    color: #888;
+}
+
+.team-member .quote {
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.team-member .name {
+    font-size: 24px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .centered {
+        width: 90%;
+        padding-left: 5%;
+    }
+    main:not(.centered) {
+        width: 90%;
+        padding-left: 5%;
+    }
+    header {
+        width: 90%;
+        padding-left: 5%;
+    }
+}
