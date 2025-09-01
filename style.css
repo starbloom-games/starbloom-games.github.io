@@ -167,16 +167,32 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        width: 90%;
+        padding-left: 5%;
+    }
     .centered {
-        width: 90%;
-        padding-left: 5%;
+        padding-left: 0%;
+        padding-top: 70px;
+        align-content: center;
+        text-align: center;
     }
-    main:not(.centered) {
-        width: 90%;
-        padding-left: 5%;
+    .header-right {
+        margin-top: 0px;
+        float: left;
     }
-    header {
-        width: 90%;
-        padding-left: 5%;
+    #wrapper {
+        display: block;
+        align-items: none;
     }
+}
+
+
+#wrapper {
+    display: flex;
+    align-items: center;
 }
