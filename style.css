@@ -48,40 +48,32 @@ header .selected {
     color: white;
 }
 
+header img {
+    width: 30px;
+    float: left;
+    padding-right: 7px;
+    padding-top: 20px;
+}
+
 img.logo {
     width: 170px;
     margin: 0;
     background-image: url(/res/icons/aura.png);
-    background-size: 170px;
+    background-size: 130px;
     background-position: center;
-    -webkit-animation: glow 3s ease-in-out infinite alternate;
-    -moz-animation: glow 3s ease-in-out infinite alternate;
+    background-repeat: no-repeat;
+    background-position-y: -1px;
     animation: glow 3s ease-in-out infinite alternate;
-}
-
-.logo-temp {
-    font-size: 170px;
-    margin: 0;
-    -webkit-animation: glow-temp 3s ease-in-out infinite alternate;
-    -moz-animation: glow-temp 3s ease-in-out infinite alternate;
-    animation: glow-temp 3s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow-temp {
-    from {
-        text-shadow: 0 0 60px #ffc;
-    }
-    to {
-        text-shadow: 0 0 20px #ffc;
-    }
 }
 
 @-webkit-keyframes glow {
     from {
-        background-size: 170px;
+        background-position-y: 1px;
+        background-size: 160px;
     }
     to {
-        background-size: 210px;
+        background-position-y: -14px;
+        background-size: 190px;
     }
 }
 
